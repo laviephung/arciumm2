@@ -9,7 +9,7 @@
 
 set -euo pipefail
 
-ROOT_DIR="/root/arci-muti"
+ROOT_DIR="/root/arciumm2"
 TOKENS_FILE="$ROOT_DIR/tokens1.txt"
 
 # -------- Các m?u l?i RPC/WSS --------
