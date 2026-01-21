@@ -119,6 +119,7 @@ for i in $(seq $START_INDEX $NUM_NODES); do
     
     openssl genpkey -algorithm Ed25519 -out identity.pem 2>/dev/null
     arcium gen-bls-key bls-keypair.json 2>/dev/null
+    arcium generate-x25519 -o x25519-keypair.json 2>/dev/null
     echo -e "${GREEN}✓${NC} Keypairs created"
     
     NODE_ADDR=$(solana address --keypair node-keypair.json)
