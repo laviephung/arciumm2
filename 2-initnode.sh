@@ -52,7 +52,7 @@ init_arx_accs() {
         --x25519-keypair-path x25519-keypair.json \
         --node-offset $offset \
         --ip-address $ip_address \
-        --rpc-url $RPC_URL > /dev/null 2>&
+        --rpc-url $RPC_URL > /dev/null 2>&1
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✓${NC} Init accounts successful"
