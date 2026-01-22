@@ -49,9 +49,10 @@ init_arx_accs() {
         --callback-keypair-path callback-kp.json \
         --peer-keypair-path identity.pem \
         --bls-keypair-path bls-keypair.json \
+        --x25519-keypair-path x25519-keypair.json \
         --node-offset $offset \
         --ip-address $ip_address \
-        --rpc-url $RPC_URL > /dev/null 2>&1
+        --rpc-url $RPC_URL > /dev/null 2>&
     
     if [ $? -eq 0 ]; then
         echo -e "${GREEN}✓${NC} Init accounts successful"
